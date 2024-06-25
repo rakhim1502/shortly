@@ -1,3 +1,13 @@
+:root{
+  --text-color: #9E9AA8;
+  --accent-color: #2BD0D0;
+  --heading-color: #34313D;
+  --light-bg: #EFF1F7;
+  --dark-bg: #232127;
+  --accent-color-hover : #9AE3E3;
+}
+
+
 /* GLOBAL */
 
 html {
@@ -17,13 +27,13 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 500;
   height: 100%;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color);
 }
 
 img {
@@ -33,10 +43,102 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.main-content {
+  flex-grow: 1;
+}
+
+.button-link{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.button-link-white{
+  color: #fff;
+}
+
+
+.site-header {
+  align-items: center;
+  padding-top: 48px;
+}
+
+.sitenav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.sitenav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.sitenav-item {
+  line-height: normal;
+  color: var(--text-color);
+}
+.sitenav-item:not(:last-child){
+  margin-right: 35px;
+}
+
+
+.sitenav-link{
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.4s ease;
+}
+
+.sitenav-link:hover {
+  color: #000;
+}
+
+.sitenav-item:nth-child(1){
+  color: var(--heading-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.sitenav-access-inner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.sitenav-access:not(:last-child) {
+  margin-right: 35px;
+}
+
+.sitenav-access{
+  font-weight: bold;
+}
+
+.button {
+  padding: 9px 24px;
+  background-color: var(--accent-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button-circle {
+  border-radius: 28px;
 }
