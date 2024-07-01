@@ -171,6 +171,7 @@ img {
   font-weight: bold;
   cursor: pointer;
   border: 0;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -182,6 +183,7 @@ img {
 }
 
 .button-circle {
+  text-decoration: none;
   border-radius: 28px;
 }
 
@@ -431,4 +433,119 @@ img {
 .features-item-text {
   padding: 0;
   margin: 0;
+}
+
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-image: url("../img/cta-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.cta__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.site-footer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: var(--dark-bg);
+  color: #fff;
+}
+
+.site-footer__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.site-footer__logo {
+  margin-right: 30px;
+}
+
+.site-footer__menus {
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.site-footer__menu:not(:last-child) {
+  margin-right: 90px;
+}
+
+.site-footer__menu-title {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
+.site-footer__menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-footer__menu-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.site-footer__menu-link {
+  color: #bfbfbf;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.site-footer__menu-link:hover {
+  color: var(--accent-color);
+}
+
+.site-footer__menu-link:active {
+  opacity: 0.6;
+}
+
+
+/* SOCIALS */
+.socials__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.socials__link:hover {
+  color: var(--accent-color);
+}
+
+.socials__link:active {
+  opacity: 0.6;
+}
+
+.socials__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
