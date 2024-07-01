@@ -221,6 +221,18 @@ img {
 }
 
 
+.index-url-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+
+/* URL-SHORTENER */
 .url-shortener__form {
   display: flex;
   padding: 48px 64px;
@@ -290,7 +302,7 @@ img {
   padding: 16px 24px;
   border-radius: 5px;
   background-color: #fff;
-  color: var(--heading-color);
+  color: var(--text-color-dark);
 }
 
 .url-shortener__result:not(:last-child) {
@@ -317,4 +329,106 @@ img {
 
 .url-shortener__copy-button--copied {
   background-color: #3a3054;
+}
+
+.index-features {
+  position: relative;
+  background-color: var(--light-bg);
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.index-features-heading {
+  padding: 0;
+  margin: 0;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--heading-color);
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.index-features-info {
+  margin: 0;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+}
+.index-features-list {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  position: relative;
+}
+
+.index-features-list::before {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 152px;
+  width: 100%;
+  height: 8px;
+  background-color: var(--accent-color);
+  content: "";
+}
+
+.index-features-item {
+  width: 350px;
+  background-color: #fff;
+}
+
+.index-features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.index-features-item:nth-child(2) {
+  margin-top: 44px;
+}
+
+.index-features-item:nth-child(3) {
+  margin-top: 88px;
+}
+.index-feature {
+  position: relative;
+  padding: 77px 32px 40px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.index-feature-icon-wrapper{
+  margin: 0;
+  position: absolute;
+  left: 32px;
+  top: -44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #3a3054;
+  margin-bottom: 33px;
+}
+.features-item-title {
+  padding: 0;
+  margin: 0;
+  color: var(--heading-color);
+  font-size: 22px;
+  line-height: normal;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.features-item-text {
+  padding: 0;
+  margin: 0;
 }
